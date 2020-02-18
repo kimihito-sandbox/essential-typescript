@@ -27,7 +27,7 @@ export class Order {
 
   public addProduct(prod: Product, quantity: number) {
     if (this.lines.has(prod.id)) {
-      if (quantity == 0) {
+      if (quantity === 0) {
         this.removeProduct(prod.id)
       } else {
         this.lines.get(prod.id)!.quantity += quantity

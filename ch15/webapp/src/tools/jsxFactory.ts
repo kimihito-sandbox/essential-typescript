@@ -4,7 +4,7 @@ export function createElement(tag: any, props: Object, ...children : Object[]) :
   }
 
   if (typeof tag === "function") {
-    return Object.assign(new tag(), { propps: props || {}}).getContent()
+    return Object.assign(new tag(), { props: props || {}}).getContent()
   }
 
   const elem = Object.assign(document.createElement(tag), props || {})

@@ -11,21 +11,21 @@ export class ProductItem {
 
   getContent(): HTMLElement {
     return <div className="card m-1 p-1 bg-light">
-    <h4>
-      { this.props.product.name }
-      <span className="badge badge-pill badge-primary float-right">${this.props.product.price.toFixed(2)}</span>
-    </h4>
-    <div className="card-text bg-white p-1">
-      { this.props.product.description }
-      <button className="btn btn-success btn-sm float-right" onClick={this.handleAddToCart}>
-        Add To Cart
-      </button>
-      <select className="form-control-inline float-right m-1" onchange={this.handleQuantityChange }>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-    </div>
+      <h4>
+        { this.props.product.name }
+        <span className="badge badge-pill badge-primary float-right">${this.props.product.price.toFixed(2)}</span>
+      </h4>
+      <div className="card-text bg-white p-1">
+        { this.props.product.description }
+        <button className="btn btn-success btn-sm float-right" onclick={ this.handleAddToCart }>
+          Add To Cart
+        </button>
+        <select className="form-control-inline float-right m-1" onchange={ this.handleQuantityChange }>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
     </div>
   }
 

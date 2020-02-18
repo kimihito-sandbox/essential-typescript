@@ -13,7 +13,7 @@ export class ProductList {
   }
 
   getContent(): HTMLElement {
-    return <div className="container-fuild">
+    return <div className="container-fluid">
       <div className="row">
         <div className="col-3 p-2">
           <CategoryList categories={this.props.categories} selectedCategory={this.props.selectedCategory} callback={ this.props.filterCallback } />
