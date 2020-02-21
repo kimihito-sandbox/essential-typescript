@@ -1,5 +1,6 @@
 {
-  "products": [{
+  "products": [
+    {
       "id": 1,
       "name": "Kayak",
       "category": "Watersports",
@@ -18,7 +19,7 @@
       "name": "Soccer Ball",
       "category": "Soccer",
       "description": "FIFA-approved size and weight",
-      "price": 19.50
+      "price": 19.5
     },
     {
       "id": 4,
@@ -63,5 +64,16 @@
       "price": 1200
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "lines": [
+        {
+          "productId": 1,
+          "productName": "Kayak",
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
