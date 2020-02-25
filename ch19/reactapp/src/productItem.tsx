@@ -21,7 +21,7 @@ export const ProductItem: FunctionComponent<Props> = (props) => {
       <button className="btn btn-success btn-sm float-right" onClick={ () => props.callback(props.product, quantity) }>
         Add To Cart
       </button>
-      <select className="form-control-inline float-right m-1" onChange={ (ev) => setQuantity(ev.target.value) }>
+      <select className="form-control-inline float-right m-1" onChange={ (ev) => setQuantity(Number(ev.target.value)) }>
         <option>1</option>
         <option>2</option>
         <option>3</option>
